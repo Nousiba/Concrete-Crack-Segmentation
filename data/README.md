@@ -17,19 +17,22 @@ The dataset contains real-world concrete surface images and corresponding pixel-
 - **BW:** Ground truth crack masks.
 
 ## Initial Dataset Inspection
-- RGB folder: 591 files.
-- BW folder: 610 files.
-- Valid image-mask pairs: Pending verification.
+- RGB images: 445.
+- BW masks: 458.
+- Matching image-mask pairs: 445.
+- Images without masks: 0.
+- Masks without images: 13.
 
 Images and masks will be matched by filename. Invalid and unmatched files will be excluded.
 
 ## Image Specifications
 - Color format: RGB.
 - Ground truth format: Crack masks.
-- Image dimensions: Pending verification.
-- Data type: Pending verification.
-- Bit depth: Pending verification.
-- Intensity range: Pending verification.
+- Processing resolution: Maximum side of 1024 pixels, preserving aspect ratio.
+- Data type: uint8.
+- Bit depth: 8 bits per channel.
+- Intensity range: 0–255.
+- Binary mask values: 0 and 1 after preprocessing.
 
 ## Dataset Challenges
 - Low contrast.
@@ -42,9 +45,9 @@ Images and masks will be matched by filename. Invalid and unmatched files will b
 ## Dataset Requirements Verification
 - Real-world images: Available.
 - Pixel-level ground truth: Available.
-- Minimum dataset size: Pending verification.
+- Minimum dataset size: Verified (445 matching image-mask pairs).
 - Academic use licence: Pending verification.
-- Google Colab CPU compatibility: Pending testing.
+- Google Colab compatibility: Successfully tested.
 
 ## Data Preparation
 - Match images with corresponding ground truth masks.
@@ -85,4 +88,4 @@ Controlled noise levels and fixed random seeds will be used for reproducible res
 The dataset will be accessed through Google Drive and Google Colab. Large raw image files will not be uploaded to GitHub.
 
 ## Current Status
-Dataset download, extraction, and initial visual inspection are complete. Full dataset verification and image analysis are pending.
+Dataset preparation, image-mask pairing, image analysis, metric testing, and baseline experiments have been completed successfully. A total of 445 matching image-mask pairs were identified. Dataset licence verification is pending.
