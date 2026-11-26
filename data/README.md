@@ -46,7 +46,7 @@ Images and masks will be matched by filename. Invalid and unmatched files will b
 - Real-world images: Available.
 - Pixel-level ground truth: Available.
 - Minimum dataset size: Verified (445 matching image-mask pairs).
-- Academic use licence: Pending verification.
+- Academic use licence: Verified (CC BY 4.0).
 - Google Colab compatibility: Successfully tested.
 
 ## Data Preparation
@@ -88,4 +88,4 @@ Controlled noise levels and fixed random seeds will be used for reproducible res
 The dataset will be accessed through Google Drive and Google Colab. Large raw image files will not be uploaded to GitHub.
 
 ## Current Status
-Dataset preparation, image-mask pairing, image analysis, metric testing, and baseline experiments have been completed successfully. A total of 445 matching image-mask pairs were identified. Dataset licence verification is pending.
+Dataset preparation, image-mask pairing, image analysis, metric testing, and baseline experiments have been completed successfully. A total of 445 matching image-mask pairs were identified. Dataset licence has been verified as CC BY 4.0.
